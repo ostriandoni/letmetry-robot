@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.4 on win32)" generated="20180115 16:20:31.215">
+<suite id="s1" name="Register" source="D:\workspace\robot_framework\register.robot">
+<test id="s1-t1" name="Twitter Registration Flow">
+<kw name="Open Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180115 16:20:31.633" level="INFO">Opening browser 'Firefox' to base url 'https://twitter.com/signup'.</msg>
+<status status="PASS" starttime="20180115 16:20:31.632" endtime="20180115 16:20:58.664"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180115 16:20:58.665" endtime="20180115 16:21:02.555"></status>
+</kw>
+<status status="PASS" starttime="20180115 16:20:31.632" endtime="20180115 16:21:02.556"></status>
+</kw>
+<kw name="Fill Registration Form">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=full-name</arg>
+<arg>${FullName}</arg>
+</arguments>
+<msg timestamp="20180115 16:21:02.560" level="INFO">Typing text 'Test Robot' into text field 'id=full-name'.</msg>
+<status status="PASS" starttime="20180115 16:21:02.559" endtime="20180115 16:21:02.948"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20180115 16:21:02.949" level="INFO">Typing text 'donny.jtk07@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20180115 16:21:02.948" endtime="20180115 16:21:03.114"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180115 16:21:03.115" level="INFO">Typing text 'qwerty111!!' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20180115 16:21:03.114" endtime="20180115 16:21:03.323"></status>
+</kw>
+<status status="PASS" starttime="20180115 16:21:02.557" endtime="20180115 16:21:03.324"></status>
+</kw>
+<kw name="Submit Form">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180115 16:21:08.330" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20180115 16:21:03.325" endtime="20180115 16:21:08.331"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@id='submit_button']</arg>
+</arguments>
+<msg timestamp="20180115 16:21:08.332" level="INFO">Clicking element 'xpath=//input[@id='submit_button']'.</msg>
+<status status="PASS" starttime="20180115 16:21:08.331" endtime="20180115 16:21:11.400"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180115 16:21:11.401" endtime="20180115 16:21:13.867"></status>
+</kw>
+<status status="PASS" starttime="20180115 16:21:03.324" endtime="20180115 16:21:13.867"></status>
+</kw>
+<status status="PASS" starttime="20180115 16:20:31.630" endtime="20180115 16:21:13.868" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180115 16:20:31.219" endtime="20180115 16:21:13.880"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
